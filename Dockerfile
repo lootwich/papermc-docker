@@ -24,4 +24,5 @@ CMD ["bash", "./papermc.sh"]
 # Container setup
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
+USER 1000
 VOLUME /papermc
