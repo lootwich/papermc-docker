@@ -2,6 +2,8 @@ name: Docker multiarch publish
 # from https://github.com/marklagendijk/node-toogoodtogo-watcher/blob/master/.github/workflows/docker-multiarch-publish.yml
 
 on:
+  schedule:
+    - cron: '23 4 * * *' # every hour
   push:
     branches: [ master ]
   workflow_dispatch: # Manual trigger
